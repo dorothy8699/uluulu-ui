@@ -1,0 +1,56 @@
+.owned-main{max-width:var(--page-width);padding:42px var(--page-gutter) 50px;margin:auto}
+.owned-title{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:26px;margin-bottom:0;border-bottom:1px solid var(--border)}
+.owned-title .eyebrow{margin:0 0 12px}
+.owned-title h1{font:600 32px/1.3 var(--font-ui);letter-spacing:-.5px;margin:0}
+.owned-total{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+.owned-total strong{font:600 32px/1.3 var(--mono);color:var(--text)}
+.owned-total>span{font:12px var(--font-ui);color:var(--muted)}
+.owned-toolbar{display:flex;align-items:center;gap:14px;padding:26px 0}
+.owned-search{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:12px;padding:0 14px;width:360px;max-width:100%;background:var(--surface)}
+.owned-search>span{color:var(--muted);font-size:24px}
+.owned-search input{height:44px;min-width:0;border:0;background:transparent;padding:0;font:12px var(--font-ui);color:var(--text);width:100%}
+.owned-toolbar select{height:46px;padding:0 30px 0 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:12px var(--font-ui)}
+#owned-count{margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
+.owned-table-head,.owned-row{display:grid;grid-template-columns:minmax(150px,1fr) 105px 110px 90px 260px;align-items:center;gap:20px}
+.owned-table-head{padding:0 22px 14px;font-size:11px;color:var(--muted)}
+.owned-row{min-height:82px;padding:17px 22px;border-top:1px solid var(--border)}
+.owned-row:hover{background:var(--surface)}
+.owned-row strong{font:600 29px/1.3 var(--font-number);color:var(--text)}
+.owned-row strong span{color:var(--accent-ink)}
+.owned-row>span{font:12px var(--mono);color:var(--muted)}
+.owned-pagination{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:18px;font:12px var(--mono);color:var(--muted)}
+.owned-pagination>div{display:flex;align-items:center;gap:18px}
+.owned-pagination button{width:34px;height:34px;border:1px solid var(--border);border-radius:9px;font-size:22px;color:var(--text)}
+.owned-pagination button:disabled{opacity:.3;cursor:default}
+.owned-note{font-size:11px;color:var(--muted);margin:24px 0 0}
+#owned-empty,#owned-disconnected{text-align:center;padding:64px 20px;background:var(--surface);border-radius:16px}
+#owned-empty h2,#owned-disconnected h2{font:500 20px var(--font-ui);margin:0 0 12px}
+#owned-empty p,#owned-disconnected p{color:var(--muted);font-size:13px}
+#owned-reset,.owned-connect{margin-top:16px;padding:12px 20px;border-radius:24px;background:var(--accent-soft);color:var(--accent-ink);font-size:13px}
+.owned-total[hidden],#owned-content[hidden],#owned-disconnected[hidden],#owned-empty[hidden],.owned-table[hidden]{display:none}
+@media(max-width:760px){
+ .owned-main{padding-top:30px}.owned-title{gap:12px;padding-bottom:22px}.owned-title h1{font-size:26px}.owned-total{gap:6px}.owned-total strong{font-size:26px}.owned-total>span{font-size:11px}
+ .owned-toolbar{flex-wrap:wrap;gap:12px;padding:22px 0}.owned-search{width:100%}.owned-toolbar select{height:40px}
+ .owned-table-head,.owned-row{grid-template-columns:minmax(104px,1fr) 65px 65px 55px;gap:8px;min-width:321px;padding-inline:4px}.owned-table-head{font-size:10px}.owned-row{min-height:76px}.owned-row strong{font-size:20px}.owned-row>span{font-size:10px}.owned-pagination{font-size:11px}.owned-pagination>div{gap:10px}
+}
+.owned-table{overflow-x:auto}
+.owned-row>.owned-mining{font-family:var(--font-ui)}
+.owned-row>.owned-mining.is-mineable{color:var(--accent-ink)}
+
+.owned-actions-heading{text-align:right}
+.owned-row-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px}
+.owned-row-actions button{min-height:36px;padding:0 13px;border:1px solid var(--border);border-radius:20px;color:var(--text);font:500 11px/1.4 var(--font-ui);white-space:nowrap}
+.owned-row-actions button:hover{border-color:var(--accent-border);background:var(--accent-soft);color:var(--accent-ink)}
+.owned-row-actions .owned-list-fixed{border-color:var(--accent-border);color:var(--accent-ink);background:var(--accent-soft)}
+.owned-sale-info{display:flex;flex-direction:column;align-items:flex-end;gap:6px;margin-right:4px}
+.owned-sale-status{color:var(--muted);font:500 11px/1.4 var(--font-ui)}
+.owned-sale-status.is-auction{color:var(--accent-ink)}
+.owned-sale-info small{font:11px var(--mono);color:var(--muted)}
+@media(min-width:761px) and (max-width:1000px){.owned-table-head,.owned-row{grid-template-columns:minmax(125px,1fr) 80px 90px 65px 225px;gap:12px;padding-inline:8px}.owned-row strong{font-size:24px}.owned-row-actions{gap:6px}.owned-row-actions button{padding-inline:10px}}
+@media(max-width:760px){
+ .owned-actions-heading{display:none}
+ .owned-row-actions{grid-column:1/-1;justify-content:flex-end;padding-top:10px}
+ .owned-row-actions button{min-height:36px;font-size:11px}
+ .owned-row{padding-block:16px}
+ .owned-sale-info{flex-direction:row;align-items:center;flex-wrap:wrap;margin-right:auto;gap:8px}
+}

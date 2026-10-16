@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#1c2026"><meta name="description" content="uluulu 靓号市场。发现一眼记住的 TapeOut 靓号。按 CPU 和完整数字位数浏览靓号市场。"><title>uluulu — 好号码，一眼记住。</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="home.css"><link rel="stylesheet" href="typography.css"><link rel="stylesheet" href="preferences.css"><script src="demo-runtime.js"></script><script src="preferences.js"></script><link rel="stylesheet" href="wallet.css"></head>
+<body class="home-page">
+<header class="header"><a class="brand" href="index.html" aria-label="uluulu 首页"><strong><span class="brand-accent">u</span>lu<span class="brand-accent">u</span>lu</strong></a><nav aria-label="主导航"><a class="nav active" href="index.html" aria-current="page">首页</a><a class="nav" href="market.html">市场一览</a><a class="nav" href="market.html?view=favorites">我的收藏 <span id="home-favorites-count">0</span></a></nav><div class="header-actions"><div class="preferences" data-preferences><button id="language-toggle" class="preference-button" type="button" aria-label="Switch to English">EN</button><button id="theme-toggle" class="preference-button theme-toggle" type="button" aria-label="切换深色模式" aria-pressed="false"><svg class="sun-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="3.3"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6 16 16M4 16l1.4-1.4M14.6 5.4 16 4"/></svg><svg class="moon-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M17 12.1A7.3 7.3 0 0 1 7.9 3a7.3 7.3 0 1 0 9.1 9.1Z"/></svg><span class="theme-label">Light</span></button></div><button class="wallet-connect" id="wallet" type="button" data-wallet-open aria-haspopup="dialog" aria-controls="wallet-dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8H5a2 2 0 0 1 0-4h13v4M4 6v12a2 2 0 0 0 2 2h14V8M20 12h-5v4h5"/><path d="M17 14h.01"/></svg><span>连接钱包</span></button></div></header>
+<main class="home-main">
+<section class="anatomy-section anatomy-hero" id="anatomy" aria-labelledby="address-title">
+  <div class="anatomy-intro"><h1 id="address-title">TapeOut 链上地址</h1></div>
+  <div class="anatomy-card">
+    <div class="anatomy-number" role="group" aria-label="tape://56.56：左侧 56 是电路ID，右侧 56 是 CPU ID">
+      <span class="anatomy-prefix" aria-hidden="true">tape://</span>
+      <div class="anatomy-part"><strong><span class="anatomy-digit"><span data-type-char>5</span><span data-type-char>6</span></span></strong><span class="anatomy-callout"><svg class="anatomy-rule" viewBox="0 0 140 4" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M1 2H139"/></svg><span class="anatomy-label">电路ID</span></span></div>
+      <span class="anatomy-dot" aria-hidden="true"><span data-type-char>.</span></span>
+      <div class="anatomy-part anatomy-cpu"><strong><span class="anatomy-digit"><span data-type-char>5</span><span data-type-char>6</span></span></strong><span class="anatomy-callout"><svg class="anatomy-rule" viewBox="0 0 140 4" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M1 2H139"/></svg><span class="anatomy-label">CPU ID</span></span></div>
+    </div>
+  </div>
+<div class="hero-search-row"><form class="hero-search" action="market.html" method="get"><span aria-hidden="true">⌕</span><input type="search" name="q" aria-label="搜索靓号或 CPU" placeholder="试试 22.888，或你喜欢的 CPU"><button type="submit" aria-label="搜索靓号">→</button></form><a class="market-launch" href="market.html">进入市场 <span aria-hidden="true">→</span></a></div><div class="hero-actions hero-actions-spacer" aria-hidden="true"></div>
+</section>
+
+<section class="selected-section live-auctions-section" id="live-auctions" aria-labelledby="live-auctions-title">
+  <div class="section-heading"><div class="auction-section-intro"><h2 id="live-auctions-title"><svg class="auction-flame" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2c1 5-5 6-3 10 2-1 3-3 3-5 5 4 7 7 5 11a7 7 0 0 1-12-1C3 11 9 8 13 2Z"/></svg>火热拍卖<span class="auction-live-word"><i class="live-indicator" aria-hidden="true"></i>LIVE</span></h2><p>竞价进行中，下一次出价由你决定。</p></div><a class="text-link" href="market.html?type=auction">查看全部拍卖 <span aria-hidden="true">↗</span></a></div>
+  <div class="selected-grid" id="home-auctions"></div>
+  <div class="section-note">拍卖与出价均为演示数据。</div>
+</section>
+
+<section class="selected-section" id="selected" aria-labelledby="selected-title"><div class="section-heading"><h2 id="selected-title">最近成交</h2><a class="text-link" href="market.html">浏览全部靓号 <span>↗</span></a></div><div class="selected-grid">
+<article class="number-tile sold-out"><div class="tile-art"><div class="tile-top"><span>01 / GENESIS</span><span>2 位数字</span></div><div class="tile-number">7<span>.0</span></div><div class="tile-caption sale-activity"><span class="sale-market"><i aria-hidden="true">T</i><span>TapeOut 官网</span></span><span class="sale-time">5分钟前</span></div></div><div class="tile-meta"><span>CPU #0 · 创世</span><span><small class="sale-label">成交价</small> <b>100</b> <small>BNB</small></span></div></article>
+<article class="number-tile sold-out"><div class="tile-art"><div class="tile-top"><span>02 / LUCKY888</span><span>4 位数字</span></div><div class="tile-number">5<span>.888</span></div><div class="tile-caption sale-activity"><span class="sale-market"><i aria-hidden="true">u</i><span>uluulu</span></span><span class="sale-time">18分钟前</span></div></div><div class="tile-meta"><span>CPU #888 · lucky888</span><span><small class="sale-label">成交价</small> <b>1.99</b> <small>BNB</small></span></div></article>
+<article class="number-tile sold-out"><div class="tile-art"><div class="tile-top"><span>03 / LUCKY888</span><span>5 位数字</span></div><div class="tile-number">22<span>.888</span></div><div class="tile-caption sale-activity"><span class="sale-market"><i aria-hidden="true">T</i><span>TapeOut 官网</span></span><span class="sale-time">1小时前</span></div></div><div class="tile-meta"><span>CPU #888 · lucky888</span><span><small class="sale-label">成交价</small> <b>4.99</b> <small>BNB</small></span></div></article>
+</div><div class="section-note">成交号码、价格、平台与时间均为静态展示样例。</div></section>
+
+
+
+
+<footer class="home-footer"><div class="footer-top"><a class="brand" href="index.html" aria-label="uluulu 首页"><strong><span class="brand-accent">u</span>lu<span class="brand-accent">u</span>lu</strong></a><a href="market.html">去发现你的号码 <span>↗</span></a></div><div class="footer-base"><span>uluulu / TAPEOUT NUMBER MARKETPLACE</span><span>静态设计预览 · 挂单与行情为演示数据</span><a href="#anatomy">回到顶部 ↑</a></div></footer>
+</main><script src="auction-data.js"></script><script src="home.js"></script><script src="holdings-data.js"></script><script src="wallet.js"></script></body></html>
